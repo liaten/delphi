@@ -1,0 +1,44 @@
+unit mainhelp;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  Tmainhelpform = class(TForm)
+    hidehelp: TButton;
+    mhmemo: TMemo;
+    procedure FormCreate(Sender: TObject);
+    procedure hidehelpClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  mainhelpform: Tmainhelpform;
+
+implementation
+
+{$R *.dfm}
+
+procedure Tmainhelpform.FormCreate(Sender: TObject);
+begin
+  mainhelpform.position:=podesktopcenter;
+  hidehelp.Left:=mainhelpform.ClientWidth div 2 - (hidehelp.Width div 2);
+  hidehelp.Top:=mainhelpform.ClientHeight - hidehelp.Height-8;
+  mhmemo.Top:=0;
+  mhmemo.Left:=0;
+  mhmemo.Width:=mainhelpform.ClientWidth;
+  mhmemo.height:=mainhelpform.clientheight-hidehelp.Height-16;
+end;
+
+procedure Tmainhelpform.hidehelpClick(Sender: TObject);
+begin
+  mainhelpform.hide;
+end;
+
+end.

@@ -1,0 +1,24 @@
+object logpassesform: Tlogpassesform
+  Left = 0
+  Top = 0
+  Caption = 'logpassesform'
+  ClientHeight = 622
+  ClientWidth = 1055
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object hidelogpasses: TButton
+    Left = 8
+    Top = 578
+    Width = 81
+    Height = 25
+    Caption = 'hidelogpasses'
+    TabOrder = 0
+  end
+end

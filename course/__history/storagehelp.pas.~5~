@@ -1,0 +1,32 @@
+unit storagehelp;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  Tstoragehelpform = class(TForm)
+    Memo1: TMemo;
+    Button1: TButton;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  storagehelpform: Tstoragehelpform;
+
+implementation
+
+{$R *.dfm}
+
+procedure Tstoragehelpform.Button1Click(Sender: TObject);
+begin
+  storagehelpform.Hide;
+end;
+
+end.

@@ -1,0 +1,31 @@
+unit removeauthor;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  Tremoveauthorform = class(TForm)
+    removeauthorformbtnhide: TButton;
+    procedure removeauthorformbtnhideClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  removeauthorform: Tremoveauthorform;
+
+implementation
+
+{$R *.dfm}
+
+procedure Tremoveauthorform.removeauthorformbtnhideClick(Sender: TObject);
+begin
+  ;
+end;
+
+end.

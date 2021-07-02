@@ -1,0 +1,31 @@
+unit shopreports;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  Tshopreportsform = class(TForm)
+    hideshopreportsbtn: TButton;
+    procedure hideshopreportsbtnClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  shopreportsform: Tshopreportsform;
+
+implementation
+
+{$R *.dfm}
+
+procedure Tshopreportsform.hideshopreportsbtnClick(Sender: TObject);
+begin
+  ;
+end;
+
+end.

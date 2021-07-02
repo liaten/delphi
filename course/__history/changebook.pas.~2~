@@ -1,0 +1,31 @@
+unit changebook;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  Tchangebookform = class(TForm)
+    hidechangebookbtn: TButton;
+    procedure hidechangebookbtnClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  changebookform: Tchangebookform;
+
+implementation
+
+{$R *.dfm}
+
+procedure Tchangebookform.hidechangebookbtnClick(Sender: TObject);
+begin
+  ;
+end;
+
+end.

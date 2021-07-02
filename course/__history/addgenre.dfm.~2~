@@ -1,0 +1,25 @@
+object addgenreform: Taddgenreform
+  Left = 0
+  Top = 0
+  Caption = 'addgenreform'
+  ClientHeight = 299
+  ClientWidth = 635
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object hidegenreformbtn: TButton
+    Left = 272
+    Top = 266
+    Width = 105
+    Height = 25
+    Caption = 'hidegenreformbtn'
+    TabOrder = 0
+    OnClick = hidegenreformbtnClick
+  end
+end

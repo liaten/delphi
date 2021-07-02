@@ -1,0 +1,26 @@
+program course;
+
+uses
+  Vcl.Forms,
+  login in 'login.pas' {loginform},
+  main in 'main.pas' {mainform},
+  loginhelp in 'loginhelp.pas' {loginhelpform},
+  mainhelp in 'mainhelp.pas' {mainhelpform},
+  storage in 'storage.pas' {storageform},
+  logins in 'logins.pas' {loginsform},
+  logpasses in 'logpasses.pas' {Form2};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(Tloginform, loginform);
+  Application.CreateForm(Tmainform, mainform);
+  Application.CreateForm(Tloginhelpform, loginhelpform);
+  Application.CreateForm(Tmainhelpform, mainhelpform);
+  Application.CreateForm(Tstorageform, storageform);
+  Application.CreateForm(Tloginsform, loginsform);
+  Application.CreateForm(TForm2, Form2);
+  Application.Run;
+end.

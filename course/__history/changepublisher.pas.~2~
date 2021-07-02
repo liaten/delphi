@@ -1,0 +1,31 @@
+unit changepublisher;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  Tchangepublisherform = class(TForm)
+    changepublisherformbtn: TButton;
+    procedure changepublisherformbtnClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  changepublisherform: Tchangepublisherform;
+
+implementation
+
+{$R *.dfm}
+
+procedure Tchangepublisherform.changepublisherformbtnClick(Sender: TObject);
+begin
+  ;
+end;
+
+end.

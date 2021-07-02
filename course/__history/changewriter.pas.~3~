@@ -1,0 +1,25 @@
+unit changewriter;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  Tchangewriterform = class(TForm)
+    hidechangewriterformbtn: TButton;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  changewriterform: Tchangewriterform;
+
+implementation
+
+{$R *.dfm}
+
+end.

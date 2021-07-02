@@ -1,0 +1,33 @@
+unit addcover;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  Taddcoverform = class(TForm)
+    hideaddcoverbtn: TButton;
+    procedure hideaddcoverbtnClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  addcoverform: Taddcoverform;
+
+implementation
+
+{$R *.dfm}
+
+uses main;
+
+procedure Taddcoverform.hideaddcoverbtnClick(Sender: TObject);
+begin
+  ;
+end;
+
+end.

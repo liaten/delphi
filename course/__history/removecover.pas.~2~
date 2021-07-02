@@ -1,0 +1,31 @@
+unit removecover;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  Tremovecoverform = class(TForm)
+    removecoverformhidebtn: TButton;
+    procedure removecoverformhidebtnClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  removecoverform: Tremovecoverform;
+
+implementation
+
+{$R *.dfm}
+
+procedure Tremovecoverform.removecoverformhidebtnClick(Sender: TObject);
+begin
+  ;
+end;
+
+end.

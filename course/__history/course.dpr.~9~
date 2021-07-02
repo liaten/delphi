@@ -1,0 +1,30 @@
+program course;
+
+uses
+  Vcl.Forms,
+  login in 'login.pas' {loginform},
+  main in 'main.pas' {mainform},
+  loginhelp in 'loginhelp.pas' {loginhelpform},
+  mainhelp in 'mainhelp.pas' {mainhelpform},
+  storage in 'storage.pas' {storageform},
+  logpasses in 'logpasses.pas' {logpassesform},
+  buy in 'buy.pas' {buyform},
+  clientorder in 'clientorder.pas' {clientorderform},
+  puborder in 'puborder.pas' {puborderform};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(Tloginform, loginform);
+  Application.CreateForm(Tmainform, mainform);
+  Application.CreateForm(Tloginhelpform, loginhelpform);
+  Application.CreateForm(Tmainhelpform, mainhelpform);
+  Application.CreateForm(Tstorageform, storageform);
+  Application.CreateForm(Tlogpassesform, logpassesform);
+  Application.CreateForm(Tbuyform, buyform);
+  Application.CreateForm(Tclientorderform, clientorderform);
+  Application.CreateForm(Tpuborderform, puborderform);
+  Application.Run;
+end.

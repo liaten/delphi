@@ -1,0 +1,34 @@
+unit changebooktype;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  Tchangebooktypeform = class(TForm)
+    changebooktypeformhidebtn: TButton;
+    procedure changebooktypeformhidebtnClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  changebooktypeform: Tchangebooktypeform;
+
+implementation
+
+{$R *.dfm}
+
+uses main;
+
+procedure Tchangebooktypeform.changebooktypeformhidebtnClick(Sender: TObject);
+begin
+  changebooktypeform.Hide;
+  mainform.Show;
+end;
+
+end.
